@@ -12008,15 +12008,15 @@ var __Html5QrcodeLibrary__;
                     }
 
                     if(this.cameras[1]){
-                        s = this.cameras[1];
+                        var s = this.cameras[1];
                         o = 1;
                         var a = s[o], c = a.id, l = null == a.label ? c : a.label;
                         l && "" !== l || (l = [p.anonymousCameraPrefix(), i++].join(" "));
                         var h = document.createElement("option");
                         h.value = c, h.innerText = l, this.options.push(h), this.selectElement.appendChild(h)
-                    }else{   console.log(a);
-                        s = this.cameras[0];
-                        o = 0;
+                    }else{
+                        var s = this.cameras[0];
+                        o = 0;console.log(s);
                         var a = s[o], c = a.id, l = null == a.label ? c : a.label;
                         l && "" !== l || (l = [p.anonymousCameraPrefix(), i++].join(" "));
                         var h = document.createElement("option");
