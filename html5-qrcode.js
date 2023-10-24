@@ -12013,14 +12013,15 @@ var __Html5QrcodeLibrary__;
                         var a = s[o], c = a.id, l = null == a.label ? c : a.label;
                         l && "" !== l || (l = [p.anonymousCameraPrefix(), i++].join(" "));
                         var h = document.createElement("option");
-                        h.value = c,/* h.innerText = l,*/ this.options.push(h), this.selectElement.appendChild(h)
+                        h.value = c, h.innerText = l, this.options.push(h), this.selectElement.appendChild(h)
                     }else{
                         var s = this.cameras;
-                        o = 0;console.log(s[o].id);
+                        o = 0;
                         var a = s[o], c = a.id, l = null == a.label ? c : a.label;
                         l && "" !== l || (l = [p.anonymousCameraPrefix(), i++].join(" "));
                         var h = document.createElement("option");
-                        h.value = c, /*h.innerText = l,*/ this.options.push(h), this.selectElement.appendChild(h)
+                        console.log(this.selectElement.appendChild(h));
+                        h.value = c, h.innerText = l, this.options.push(h), this.selectElement.appendChild(h)
                     }
 
                     // for (var i = 1, o = 0, s = this.cameras; o < s.length; o++) {
@@ -12029,7 +12030,7 @@ var __Html5QrcodeLibrary__;
                     //     var h = document.createElement("option");
                     //     h.value = c, h.innerText = l, this.options.push(h), this.selectElement.appendChild(h)
                     // }
-                    e.appendChild(this.selectElement), t.appendChild(e)
+                    // e.appendChild(this.selectElement), t.appendChild(e)
                 }, t.prototype.disable = function () {
                     this.selectElement.disabled = !0
                 }, t.prototype.isDisabled = function () {
@@ -12212,7 +12213,7 @@ var __Html5QrcodeLibrary__;
                     a = ot.createElement("button", it.CAMERA_START_BUTTON_ID);
                 a.innerText = p.scanButtonStartScanningText(), s.appendChild(a);
                 var c, l = ot.createElement("button", it.CAMERA_STOP_BUTTON_ID);
-                l.innerText = p.scanButtonStopScanningText(), l.style.display = "none", l.disabled = !0, s.appendChild(l), n.appendChild(s);
+                // l.innerText = p.scanButtonStopScanningText(), l.style.display = "none", l.disabled = !0, s.appendChild(l), n.appendChild(s);
                 var h = function (t) {
                     t || (a.style.display = "none"), a.innerText = p.scanButtonStartScanningText(), a.style.opacity = "1", a.disabled = !1, t && (a.style.display = "inline-block")
                 };
