@@ -12026,6 +12026,7 @@ var __Html5QrcodeLibrary__;
                         var h = document.createElement("option");
                         h.value = c, h.innerText = l, this.options.push(h), this.selectElement.appendChild(h)
                     }
+                    alert(this.selectElement.length)
                     e.appendChild(this.selectElement), t.appendChild(e)
                 }, t.prototype.disable = function () {
                     this.selectElement.disabled = !0
