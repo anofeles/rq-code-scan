@@ -11571,13 +11571,13 @@ var __Html5QrcodeLibrary__;
 
                 return t.prototype.renderInto = function (t) {
                     var e = this;
-                    this.infoIcon.alt = "Info icon", this.infoIcon.src = K, this.infoIcon.style.position = "absolute", this.infoIcon.style.top = "4px", this.infoIcon.style.right = "4px", this.infoIcon.style.opacity = "0.6", this.infoIcon.style.cursor = "pointer", this.infoIcon.style.zIndex = "2", this.infoIcon.style.width = "16px", this.infoIcon.style.height = "16px", this.infoIcon.onmouseover = function (t) {
-                        return e.onHoverIn()
-                    }, this.infoIcon.onmouseout = function (t) {
-                        return e.onHoverOut()
-                    }, this.infoIcon.onclick = function (t) {
-                        return e.onClick()
-                    }, t.appendChild(this.infoIcon)
+                    // this.infoIcon.alt = "Info icon", this.infoIcon.src = K, this.infoIcon.style.position = "absolute", this.infoIcon.style.top = "4px", this.infoIcon.style.right = "4px", this.infoIcon.style.opacity = "0.6", this.infoIcon.style.cursor = "pointer", this.infoIcon.style.zIndex = "2", this.infoIcon.style.width = "16px", this.infoIcon.style.height = "16px", this.infoIcon.onmouseover = function (t) {
+                    //     return e.onHoverIn()
+                    // }, this.infoIcon.onmouseout = function (t) {
+                    //     return e.onHoverOut()
+                    // }, this.infoIcon.onclick = function (t) {
+                    //     return e.onClick()
+                    // }, t.appendChild(this.infoIcon)
                 }, t.prototype.onHoverIn = function () {
                     this.isShowingInfoIcon && (this.infoIcon.style.opacity = "1")
                 }, t.prototype.onHoverOut = function () {
