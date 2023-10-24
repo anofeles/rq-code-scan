@@ -12006,24 +12006,18 @@ var __Html5QrcodeLibrary__;
                         // var n = p.selectCamera();
                         // e.innerText = "".concat(n, " (").concat(this.cameras.length, ")  ")
                     // }
-alert(this.cameras[1].label)
-                    console.log(this.cameras[0])
                     if(r > 1){
-                        var s = this.cameras;
                         o = 1;
-                        var a = s[o], c = a.id, l = null == a.label ? c : a.label;
-                        l && "" !== l || (l = [p.anonymousCameraPrefix(), i++].join(" "));
-                        var h = document.createElement("option");
-                        h.value = c, h.innerText = l, this.options.push(h), this.selectElement.appendChild(h)
                     }else{
-                        var s = this.cameras;
                         o = 0;
-                        var a = s[o], c = a.id, l = null == a.label ? c : a.label;
-                        l && "" !== l || (l = [p.anonymousCameraPrefix(), i++].join(" "));
-                        var h = document.createElement("option");
-                        h.value = c, h.innerText = l, this.options.push(h), this.selectElement.appendChild(h)
                     }
-
+                    var s = this.cameras;
+                    var a = s[o], c = a.id, l = null == a.label ? c : a.label;
+                    alert(c)
+                    alert(l)
+                    l && "" !== l || (l = [p.anonymousCameraPrefix(), i++].join(" "));
+                    var h = document.createElement("option");
+                    h.value = c, h.innerText = l, this.options.push(h), this.selectElement.appendChild(h)
                     // for (var i = 1, o = 0, s = this.cameras; o < s.length; o++) {
                     //     var a = s[o], c = a.id, l = null == a.label ? c : a.label;
                     //     l && "" !== l || (l = [p.anonymousCameraPrefix(), i++].join(" "));
