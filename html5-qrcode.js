@@ -12020,7 +12020,6 @@ var __Html5QrcodeLibrary__;
                         var a = s[o], c = a.id, l = null == a.label ? c : a.label;
                         l && "" !== l || (l = [p.anonymousCameraPrefix(), i++].join(" "));
                         var h = document.createElement("option");
-                        console.log(this.selectElement.appendChild(h));
                         h.value = c, h.innerText = l, this.options.push(h), this.selectElement.appendChild(h)
                     }
 
