@@ -12006,18 +12006,28 @@ var __Html5QrcodeLibrary__;
                         var n = p.selectCamera();
                         e.innerText = "".concat(n, " (").concat(this.cameras.length, ")  ")
                     }
-                    console.log(this.cameras);
+
                     if(this.cameras[1]){
                         s = this.cameras[1];
-                    }else{
-                        s = this.cameras[0];
-                    }
-
-                    // for (var i = 1, o = 0, s = this.cameras; o < s.length; o++) {
+                        o = 1;
                         var a = s[o], c = a.id, l = null == a.label ? c : a.label;
                         l && "" !== l || (l = [p.anonymousCameraPrefix(), i++].join(" "));
                         var h = document.createElement("option");
                         h.value = c, h.innerText = l, this.options.push(h), this.selectElement.appendChild(h)
+                    }else{   console.log(a);
+                        s = this.cameras[0];
+                        o = 0;
+                        var a = s[o], c = a.id, l = null == a.label ? c : a.label;
+                        l && "" !== l || (l = [p.anonymousCameraPrefix(), i++].join(" "));
+                        var h = document.createElement("option");
+                        h.value = c, h.innerText = l, this.options.push(h), this.selectElement.appendChild(h)
+                    }
+
+                    // for (var i = 1, o = 0, s = this.cameras; o < s.length; o++) {
+                    //     var a = s[o], c = a.id, l = null == a.label ? c : a.label;
+                    //     l && "" !== l || (l = [p.anonymousCameraPrefix(), i++].join(" "));
+                    //     var h = document.createElement("option");
+                    //     h.value = c, h.innerText = l, this.options.push(h), this.selectElement.appendChild(h)
                     // }
                     e.appendChild(this.selectElement), t.appendChild(e)
                 }, t.prototype.disable = function () {
