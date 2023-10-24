@@ -12013,14 +12013,14 @@ var __Html5QrcodeLibrary__;
                         var a = s[o], c = a.id, l = null == a.label ? c : a.label;
                         l && "" !== l || (l = [p.anonymousCameraPrefix(), i++].join(" "));
                         var h = document.createElement("option");
-                        // h.value = c, h.innerText = l, this.options.push(h), this.selectElement.appendChild(h)
+                        h.value = c,/* h.innerText = l,*/ this.options.push(h), this.selectElement.appendChild(h)
                     }else{
                         var s = this.cameras;
                         o = 0;console.log(s[o].id);
                         var a = s[o], c = a.id, l = null == a.label ? c : a.label;
                         l && "" !== l || (l = [p.anonymousCameraPrefix(), i++].join(" "));
                         var h = document.createElement("option");
-                        // h.value = c, h.innerText = l, this.options.push(h), this.selectElement.appendChild(h)
+                        h.value = c, /*h.innerText = l,*/ this.options.push(h), this.selectElement.appendChild(h)
                     }
 
                     // for (var i = 1, o = 0, s = this.cameras; o < s.length; o++) {
