@@ -12006,7 +12006,7 @@ var __Html5QrcodeLibrary__;
                         // var n = p.selectCamera();
                         // e.innerText = "".concat(n, " (").concat(this.cameras.length, ")  ")
                     // }
-
+alert(r)
                     if(this.cameras[1]){
                         var s = this.cameras;
                         o = 1;
