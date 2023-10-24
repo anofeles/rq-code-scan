@@ -12006,9 +12006,9 @@ var __Html5QrcodeLibrary__;
                         // var n = p.selectCamera();
                         // e.innerText = "".concat(n, " (").concat(this.cameras.length, ")  ")
                     // }
-alert(this.cameras[0].label)
+alert(this.cameras[1].label)
                     console.log(this.cameras[0])
-                    if(this.cameras[1]){
+                    if(r > 1){
                         var s = this.cameras;
                         o = 1;
                         var a = s[o], c = a.id, l = null == a.label ? c : a.label;
