@@ -11571,13 +11571,13 @@ var __Html5QrcodeLibrary__;
 
                 return t.prototype.renderInto = function (t) {
                     var e = this;
-                    // this.infoIcon.alt = "Info icon", this.infoIcon.src = K, this.infoIcon.style.position = "absolute", this.infoIcon.style.top = "4px", this.infoIcon.style.right = "4px", this.infoIcon.style.opacity = "0.6", this.infoIcon.style.cursor = "pointer", this.infoIcon.style.zIndex = "2", this.infoIcon.style.width = "16px", this.infoIcon.style.height = "16px", this.infoIcon.onmouseover = function (t) {
-                    //     return e.onHoverIn()
-                    // }, this.infoIcon.onmouseout = function (t) {
-                    //     return e.onHoverOut()
-                    // }, this.infoIcon.onclick = function (t) {
-                    //     return e.onClick()
-                    // }, t.appendChild(this.infoIcon)
+                    this.infoIcon.alt = "Info icon", this.infoIcon.src = K, this.infoIcon.style.position = "absolute", this.infoIcon.style.top = "4px", this.infoIcon.style.right = "4px", this.infoIcon.style.opacity = "0.6", this.infoIcon.style.cursor = "pointer", this.infoIcon.style.zIndex = "2", this.infoIcon.style.width = "16px", this.infoIcon.style.height = "16px", this.infoIcon.onmouseover = function (t) {
+                        return e.onHoverIn()
+                    }, this.infoIcon.onmouseout = function (t) {
+                        return e.onHoverOut()
+                    }, this.infoIcon.onclick = function (t) {
+                        return e.onClick()
+                    }, t.appendChild(this.infoIcon)
                 }, t.prototype.onHoverIn = function () {
                     this.isShowingInfoIcon && (this.infoIcon.style.opacity = "1")
                 }, t.prototype.onHoverOut = function () {
@@ -12160,9 +12160,9 @@ var __Html5QrcodeLibrary__;
             }, t.prototype.createPermissionButton = function (t, e) {
                 var r = this, n = ot.createElement("button", this.getCameraPermissionButtonId());
                 this.getDashboardSectionSwapLink()
-                // n.innerText = p.cameraPermissionTitle(), n.addEventListener("click", (function () {
-                //      n.disabled = !0, r.createCameraListUi(t, e, n)
-                // })), e.appendChild(n)
+                n.innerText = p.cameraPermissionTitle(), n.addEventListener("click", (function () {
+                     n.disabled = !0, r.createCameraListUi(t, e, n)
+                })), e.appendChild(n)
                n.disabled = !0, r.createCameraListUi(t, e, n), e.appendChild(n)
             }, t.prototype.createPermissionsUi = function (t, e) {
                 var r = this;
@@ -12278,7 +12278,7 @@ var __Html5QrcodeLibrary__;
                         r.style.background = "rgba(0, 0, 0, 0)", r.style.color = "rgb(17, 17, 17)"
                 }
             }, t.prototype.showHideScanTypeSwapLink = function (t) {
-                this.scanTypeSelector.hasMoreThanOneScanType() && (!0 !== t && (t = !1), this.sectionSwapAllowed = t, this.getDashboardSectionSwapLink().style.display = t ? "inline-block" : "none")
+                this.scanTypeSelector.hasMoreThanOneScanType() && (!0 !== t && (t = !1), this.sectionSwapAllowed = t/*, this.getDashboardSectionSwapLink().style.display = t ? "inline-block" : "none"*/)
             }, t.prototype.insertCameraScanImageToScanRegion = function () {
                 var t = this, e = document.getElementById(this.getScanRegionId());
                 if (this.cameraScanImage) return e.innerHTML = "<br>", void e.appendChild(this.cameraScanImage);
