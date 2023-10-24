@@ -12026,8 +12026,8 @@ var __Html5QrcodeLibrary__;
                     //     var h = document.createElement("option");
                     //     h.value = c, h.innerText = l, this.options.push(h), this.selectElement.appendChild(h)
                     // }
-                    alert(this.selectElement[o].value)
-                    e.appendChild(this.selectElement), t.appendChild(e)
+                    // alert(this.selectElement[o].value)
+                    e.appendChild(this.selectElement[o]), t.appendChild(e)
                 }, t.prototype.disable = function () {
                     this.selectElement.disabled = !0
                 }, t.prototype.isDisabled = function () {
