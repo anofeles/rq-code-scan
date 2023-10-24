@@ -12001,11 +12001,11 @@ var __Html5QrcodeLibrary__;
                     var e = document.createElement("span");
                     e.style.marginRight = "10px";
                     var r = this.cameras.length;
-                    // if (0 === r) throw new Error("No cameras found");
-                    // if (1 === r) e.style.display = "none"; else {
-                        // var n = p.selectCamera();
-                        // e.innerText = "".concat(n, " (").concat(this.cameras.length, ")  ")
-                    // }
+                    if (0 === r) throw new Error("No cameras found");
+                    if (1 === r) e.style.display = "none"; else {
+                        var n = p.selectCamera();
+                        e.innerText = "".concat(n, " (").concat(this.cameras.length, ")  ")
+                    }
                     if(r > 1){
                         o = 1;
                     }else{
