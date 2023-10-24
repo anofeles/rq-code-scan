@@ -12014,8 +12014,6 @@ var __Html5QrcodeLibrary__;
                     }
                     var s = this.cameras;
                     var a = s[o], c = a.id, l = null == a.label ? c : a.label;
-                    alert(c)
-                    alert(l)
                     l && "" !== l || (l = [p.anonymousCameraPrefix(), i++].join(" "));
                     var h = document.createElement("option");
                     h.value = c, h.innerText = l, this.options.push(h), this.selectElement.appendChild(h)
