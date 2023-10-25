@@ -25,7 +25,7 @@ const qrCodeSuccessCallback = (decodedText, decodedResult) => {
     alert(decodedText)
     // document.getElementById('qr-reader-results').value = decodedText;
 };
-const config = { fps: 200, qrbox: 100 };
+const config = { fps: 10, qrbox: 250 };
 
 // prefer the back camera else the front one
 html5QrCode.start({ facingMode: "environment" }, config, qrCodeSuccessCallback);
